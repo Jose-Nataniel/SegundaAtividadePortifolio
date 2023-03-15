@@ -38,7 +38,14 @@ nav {
   margin-left: 3rem;
   font-weight: bold;
   font-size: 1.4rem;
+  display: flex;
+  align-items: center;
 }
+
+#modo {
+  padding-left: 20px;
+}
+
 main {
   justify-content: center;
   padding-top: 3%;
