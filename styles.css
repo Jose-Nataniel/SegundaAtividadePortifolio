@@ -223,6 +223,7 @@ main {
 
 .img-projetos {
   height: 100%;
+  width: 100%;
   border: 2px ridge #08004f;
   border-radius: 15px;
 }
@@ -263,7 +264,7 @@ footer {
 }
 #div-footer p {
   margin: 0;
-  color: #0f8edb;
+  color: #08004f;
   padding-left: 10px;
 }
 #div-footer .icones{
