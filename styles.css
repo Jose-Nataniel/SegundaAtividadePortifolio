@@ -7,8 +7,8 @@ body {
 
 nav {
   width: 100%;
+  background-color: #f3f3f3;
   box-shadow: 0px 3px 5px 2px #969696;
-  background: #f3f3f3;
   position: fixed;
   z-index: 1;
   height: 50px;
@@ -24,13 +24,6 @@ nav {
   justify-content: center;
 }
 
-.li-nav:hover {
-  color: #0803a6;
-  font-weight: 900;
-  font-size: 24px;
-  cursor: pointer;
-  transition: color 0.5s;
-}
 .li-nav a,
 .li-nav {
   text-decoration: none;
@@ -42,6 +35,12 @@ nav {
   align-items: center;
 }
 
+.li-nav:hover {
+  color: #0803a6;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
 #modo {
   padding-left: 20px;
 }
@@ -50,11 +49,14 @@ main {
   justify-content: center;
   padding-top: 3%;
 }
+
 .foto-perfil {
   margin-top: 3rem;
   width: 10rem;
   height: 10rem;
   margin-bottom: 10px;
+  box-shadow: 0px 3px 5px 2px #969696;
+  border-radius: 80px;
 }
 
 .div-lateral {
@@ -70,6 +72,7 @@ main {
   flex-direction: column;
   position: fixed;
 }
+
 .icones {
   width: 2rem;
   height: 2rem;
@@ -78,13 +81,27 @@ main {
 
 #h1-nome {
   margin: 0;
+  transition: transform 0.2s ease-out;
 }
+
+#h1-nome:hover {
+  transform: scale(1.1);
+  color: #0803a6;
+}
+
 #p-funcao {
   margin: 0;
   font-weight: 600;
   font-size: 17px;
   padding-bottom: 15px;
+  transition: transform 0.2s ease-out;
 }
+
+#p-funcao:hover {
+  transform: scale(1.1);
+  color: #0803a6;
+}
+
 .link-contatos {
   text-decoration: none;
   color: inherit;
@@ -123,6 +140,13 @@ main {
 #h1-conteudo {
   text-align: center;
   font-size: xx-large;
+  transition: transform 0.2s ease-out;
+}
+
+#h1-conteudo:hover {
+  color: #08004f;
+  transform: scale(1.1);
+
 }
 
 #p-conteudo {
@@ -134,8 +158,15 @@ main {
 
 .h2-aprendizado {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 0;
+  transition: transform 0.2s ease-out;
 }
+
+.h2-aprendizado:hover {
+  color: #08004f;
+  transform: scale(1.1);
+}
+
 .container-formacao {
   display: flex;
 }
@@ -145,6 +176,7 @@ main {
   width: 80px;
   margin-bottom: 20px;
 }
+
 .img-dev {
   height: 70px;
   width: 70px;
@@ -170,15 +202,23 @@ main {
   margin: 2px;
   font-size: 13px;
 }
+
 .icones-skill {
-  width: 2.3rem;
-  height: 2.3rem;
+  height: 3rem;
 }
+
 #p-AplDados {
   font-weight: 600;
   text-align: center;
   font-size: larger;
+  transition: transform 0.2s ease-out;
 }
+
+#p-AplDados:hover {
+  color: #08004f;
+  transform: scale(1.1);
+}
+
 #ul-skill {
   display: flex;
   list-style: none;
@@ -206,19 +246,13 @@ main {
   flex-direction: column;
   margin-bottom: 80px;
 }
+
 .div-projetos {
   height: 165px;
   width: 100%;
-  padding: 5px;
+  margin-top: 35px;
   box-sizing: border-box;
   display: flex;
-  position: relative;
-  left: 0;
-  transition: left 1s;
-}
-
-.div-projetos:hover {
-  left: 30px;
 }
 
 .img-projetos {
@@ -226,7 +260,16 @@ main {
   width: 284px;
   border: 2px ridge #08004f;
   border-radius: 15px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-out;
 }
+
+.img-projetos:hover{
+  filter: grayscale(0%);
+}
+
 .figure-projetos {
   height: 100%;
   margin: 0;
@@ -246,6 +289,7 @@ main {
   display: flex;
   align-items: center;
 }
+
 .h2-projetos:hover {
   color: #08004f;
   font-weight: 600;
@@ -256,26 +300,29 @@ footer {
   background-color: #202020;
   box-shadow: 0px -2px 5px 2px #969696;
 }
+
 #div-footer {
   display: flex;
   padding: 10px;
   justify-content: center;
   align-items: center;
 }
+
 #div-footer p {
   margin: 0;
   color: #799af5;
   padding-left: 10px;
 }
+
 #div-footer .icones{
   padding-left: 12px;
 }
+
 #div-footer .icones:hover{
   opacity: 0.5;
 }
 
-
-@media (max-width: 865px) {
+@media (max-width: 888px) {
   .li-nav a,
   .li-nav {
     margin-left: 10px;
@@ -298,6 +345,7 @@ footer {
     margin-right: 25px;
   }
 }
+
 @media (max-height: 510px) {
   .foto-perfil {
     margin-top: 2.5rem;
